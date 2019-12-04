@@ -1,0 +1,14 @@
+{
+    "CreateAPIKey": 0,
+    "AppSyncApiName": "unicornflix",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authunicornflixd5ece0bd",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-unicornflix-dev-145336-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/d1792d0303e366f8fc4dd2fd9ccd3883fcb7705f"
+}
